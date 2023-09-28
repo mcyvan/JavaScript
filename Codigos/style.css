@@ -1,0 +1,13 @@
+th{
+  border: solid 2px black;  
+}
+.formulario{
+    width: 250px;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+div{
+    margin: auto;
+}
