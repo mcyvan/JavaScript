@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script2.js"></script>
+    <title>Registro</title>
+</head>
+<body onload="Show()">
+    <h1>Crear Cuenta</h1>
+    <div>
+        <label>Usuario</label>
+        <input id="inputUser">
+        <br>
+        <label>Edad</label>
+        <input id="inputAge">
+        <br>
+        <br>
+        <button onclick="Registro()">Agregar</button>
+        <button onclick="Borrar()">Borrar Ultimo</button>
+        <button onclick="BorrarP()">Borrar Primero</button>
+        <button onclick="InsertarE()">Insertar Encima</button>
+        <br>
+        <br>
+        <button onclick="Ordenar()">Ordenar</button>
+        <button onclick="Invertir()">Invertir</button>
+        <button onclick="Search()">Buscar</button>
+
+    </div>
+<div>
+    <ol id="lista">
+
+    </ol>
+</div>
+   
+</body>
+</html>
