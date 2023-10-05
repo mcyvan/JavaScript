@@ -7,7 +7,10 @@ var nuevoUsuario=[
         pass:"1234",
         age:29
     }
-]
+];
+
+var intarray=[5,35,44,60,2,22];
+
 
 function Extract(){
     input=document.getElementById("inputUser").value;    
@@ -56,7 +59,8 @@ function InsertarE(){
     Show();
 }
 function Ordenar(){
-    array.sort();
+    nuevoUsuario.sort((a, b)=> a.age - b.age);
+    // intarray.sort((a, b)=> a - b);
     Show();
 }
 function Invertir(){
@@ -71,4 +75,8 @@ function Search(){
     }else{
         alert("No se encontro!");
     }
+}
+
+function Splice(){
+    nuevoUsuario.splice(1,1);
 }
