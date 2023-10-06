@@ -26,3 +26,9 @@ function LogIn(){
         alert("Usuario o Contraseña Incorrecta");
         }
 }
+
+function Register(){
+    Extract();
+    users.push({user:userR, pass:passR});
+    alert("Agregado Correctamente");
+}
