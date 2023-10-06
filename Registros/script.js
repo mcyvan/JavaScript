@@ -28,9 +28,15 @@ function Show(){
     for(let i=0;i<array.length;i++){
         // crear los elementos de la lista LI
         var li=document.createElement("li");
+        li.id="Ejemplo"+i;
+        var button=document.createElement("button");
+        button.innerHTML="Delete";
+        // agrega un evento que escucha el click en el boton
+        // , y elimina el registro con el index i
+        button.addEventListener("click",()=>{Splice(i)})
         // traer la informacion del arreglo al objeto li
         li.innerHTML=array[i];
-        // 
+        li.appendChild(button);
         lista.appendChild(li);
     }
 }
@@ -69,4 +75,8 @@ function Search(){
     }else{
         alert("No se encontro!");
     }
+}
+function Splice(i){
+    array.splice(i,1);
+    Show();
 }
