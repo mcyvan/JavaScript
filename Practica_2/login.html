@@ -18,7 +18,7 @@
             <br>
             <label for="">Introduce la Contraseña</label>
             <br>
-            <input type="text" id="pass" placeholder="Password">
+            <input onchange="LogIn()" type="text" id="pass" placeholder="Password">
             <br>
             <br>
             <button onclick="LogIn()">Aceptar</button>
@@ -36,7 +36,7 @@
             <br>
             <label for="">Introduce la Contraseña</label>
             <br>
-            <input type="text" id="passR" placeholder="Password">
+            <input onchange="Register()" type="text" id="passR" placeholder="Password">
             <br>
             <br>
             <button onclick="Register()">Registrar</button>
@@ -45,15 +45,10 @@
 
     <div class="admin" style="margin-top: 5px; border: 1px solid black; text-align: center; padding: 5px;
     background-color: gray;">
-        <table>
-            <tr>
-                <th>
-                    Usuario
-                </th>
-                <th>
-                    X
-                </th>
-            </tr>
+        <table id="tabla">
+            
+                
+            
         </table>
     </div>
 </body>
